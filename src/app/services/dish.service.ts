@@ -3,7 +3,6 @@ import { Dish } from '../shared/dish';
 import { DISHES } from '../shared/dishes';
 
 import { Observable } from 'rxjs';
-import { delay } from 'rxjs/operators';
 import { map, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { baseURL } from '../shared/baseurl';
