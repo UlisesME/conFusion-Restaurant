@@ -1,7 +1,7 @@
 <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
     fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
-    <div fxFlex="40">
+    <div fxFlex="40" [@visibility]="visibility">
         <div fxFlex *ngIf="dish">
             <mat-card *ngIf="dish">
                 <mat-card-header>
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div fxFlex="40" fxLayoutAlign="start center">
+    <div fxFlex="40" fxLayoutAlign="start center" [@visibility]="visibility">
         <div>
             <h3>COMMENTS</h3>
             <mat-list *ngIf="dish">
